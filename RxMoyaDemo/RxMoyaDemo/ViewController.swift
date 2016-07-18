@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    downloadRepositories("ashfurrow")
+    fetchCurrentWeather("da nang")
+    
+    //    downloadRepositories("ashfurrow")
   }
   
   override func didReceiveMemoryWarning() {
@@ -24,6 +26,44 @@ class ViewController: UIViewController {
   }
   
   // MARK: - API Stuff
+  
+  func fetchCurrentWeather(city: String) {
+    WeatherProvider.request(Weather.CurrentWeather(city)) { (response) in
+      
+      var success = true
+      var message = "Unable to fetch from XUAPI"
+      
+      switch response {
+      case let .Success(response):
+        do {
+          let json: NSArray? = try response.mapJSON() as? NSArray
+          if let json = json {
+            // Presumably, you'd parse the JSON into a model object. This is just a demo, so we'll keep it as-is.
+            self.repos = json
+          } else {
+            success = false
+          }
+        } catch {
+          success = false
+        }
+      case let .Failure(error):
+        guard let error = error as? CustomStringConvertible else {
+          break
+        }
+        message = error.description
+        success = false
+      }
+      
+      if !success {
+        let alertController = UIAlertController(title: "Weather API Fetch", message: message, preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+          alertController.dismissViewControllerAnimated(true, completion: nil)
+        })
+        alertController.addAction(ok)
+        self.presentViewController(alertController, animated: true, completion: nil)
+      }
+    }
+  }
   
   func downloadRepositories(username: String) {
     GitHubProvider.request(.UserRepositories(username), completion: { result in
