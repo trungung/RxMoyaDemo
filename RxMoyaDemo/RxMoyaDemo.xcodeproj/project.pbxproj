@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F73D35447449AA2A5D5693C /* Pods_RxMoyaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47D224B665ACAD522464851 /* Pods_RxMoyaDemo.framework */; };
+		DC1B48DD1D3C781D006B9927 /* XULocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B48DC1D3C781D006B9927 /* XULocation.swift */; };
+		DC1B48DF1D3C872C006B9927 /* XUCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B48DE1D3C872C006B9927 /* XUCondition.swift */; };
+		DC1B48E11D3C87C1006B9927 /* XUWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B48E01D3C87C1006B9927 /* XUWeather.swift */; };
 		DC7BDA8B1D38764000317134 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7BDA8A1D38764000317134 /* WeatherAPI.swift */; };
 		DC7BDA8D1D38765B00317134 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7BDA8C1D38765B00317134 /* BaseAPI.swift */; };
 		DC96BC981D349C7C00ED8517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC96BC971D349C7C00ED8517 /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 		613CA7EE4D5FD3D62794AFF5 /* Pods-RxMoyaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaDemo/Pods-RxMoyaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9684157E389BE85D14CD2138 /* Pods-RxMoyaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaDemo/Pods-RxMoyaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C47D224B665ACAD522464851 /* Pods_RxMoyaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMoyaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1B48DC1D3C781D006B9927 /* XULocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XULocation.swift; sourceTree = "<group>"; };
+		DC1B48DE1D3C872C006B9927 /* XUCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XUCondition.swift; sourceTree = "<group>"; };
+		DC1B48E01D3C87C1006B9927 /* XUWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XUWeather.swift; sourceTree = "<group>"; };
 		DC7BDA8A1D38764000317134 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		DC7BDA8C1D38765B00317134 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		DC96BC941D349C7C00ED8517 /* RxMoyaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMoyaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,9 @@
 		DC96BCAC1D349DE600ED8517 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC1B48DC1D3C781D006B9927 /* XULocation.swift */,
+				DC1B48DE1D3C872C006B9927 /* XUCondition.swift */,
+				DC1B48E01D3C87C1006B9927 /* XUWeather.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -270,12 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1B48DF1D3C872C006B9927 /* XUCondition.swift in Sources */,
 				DC96BC9A1D349C7D00ED8517 /* ViewController.swift in Sources */,
 				DCB36D751D37234D00C3AAE6 /* Config.swift in Sources */,
 				DC7BDA8B1D38764000317134 /* WeatherAPI.swift in Sources */,
 				DC7BDA8D1D38765B00317134 /* BaseAPI.swift in Sources */,
 				DC96BCAF1D34A03100ED8517 /* GitHubAPI.swift in Sources */,
 				DC96BC981D349C7C00ED8517 /* AppDelegate.swift in Sources */,
+				DC1B48DD1D3C781D006B9927 /* XULocation.swift in Sources */,
+				DC1B48E11D3C87C1006B9927 /* XUWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
