@@ -64,7 +64,7 @@ extension XUWeather: Mappable {
     feelslike_f             <- map["feelslike_f"]
   }
   
-  class func newInstance() -> Mappable {
-    return XUWeather()
-  }
+  //  class func newInstance() -> Mappable {
+  //    return XUWeather()
+  //  }
 }

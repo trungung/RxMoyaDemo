@@ -8,12 +8,17 @@ target 'RxMoyaDemo' do
   # Pods for RxMoyaDemo
   pod 'Moya/RxSwift'
   pod 'Moya/ReactiveCocoa'
+  pod 'Moya-ObjectMapper/RxSwift'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  
   pod 'SwiftyJSON'
   pod 'RealmSwift'
   pod 'HanekeSwift'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
-  # Mapping objects to arrays or dictionaries
-  pod 'ObjectMapper', '~> 1.3'
+  
   # Loading spinner / activity indicator
   pod "JHSpinner"
   

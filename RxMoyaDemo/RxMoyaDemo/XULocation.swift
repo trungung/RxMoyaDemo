@@ -49,7 +49,7 @@ extension XULocation: Mappable {
     localtime        <- map["localtime"]
   }
   
-  class func newInstance() -> Mappable {
-    return XULocation()
-  }
+  //  class func newInstance() -> Mappable {
+  //    return XULocation()
+  //  }
 }

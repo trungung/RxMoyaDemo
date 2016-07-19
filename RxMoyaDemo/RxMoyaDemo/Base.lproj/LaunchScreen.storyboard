@@ -17,16 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="9mO-3p-teR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RxSwift Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMA-81-t0c">
-                                <rect key="frame" x="68" y="266" width="184" height="36"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
-                                <color key="textColor" red="0.058823529409999999" green="0.25882352939999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="73" y="266" width="175" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.79607843140000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aMA-81-t0c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="29C-OI-tsb"/>
+                            <constraint firstAttribute="trailing" secondItem="9mO-3p-teR" secondAttribute="trailing" id="9rC-Xh-FAs"/>
+                            <constraint firstItem="9mO-3p-teR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Bg3-gD-Len"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9mO-3p-teR" secondAttribute="bottom" id="CSy-xM-P7R"/>
+                            <constraint firstItem="9mO-3p-teR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Lci-l4-Wcx"/>
                             <constraint firstItem="aMA-81-t0c" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="d61-cl-jzT"/>
                         </constraints>
                     </view>
@@ -36,4 +43,7 @@
             <point key="canvasLocation" x="28" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="320" height="568"/>
+    </resources>
 </document>

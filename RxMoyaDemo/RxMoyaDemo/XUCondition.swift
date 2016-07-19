@@ -13,7 +13,7 @@ class XUCondition: Object {
   
   dynamic var text = ""
   dynamic var icon = ""
-  dynamic var code = ""
+  dynamic var code = 0
   
   override class func primaryKey() -> String? {
     return "icon"
@@ -36,7 +36,7 @@ extension XUCondition: Mappable {
     icon = "https:" + icon
   }
   
-  class func newInstance() -> Mappable {
-    return XUCondition()
-  }
+  //  class func newInstance() -> Mappable {
+  //    return XUCondition()
+  //  }
 }
