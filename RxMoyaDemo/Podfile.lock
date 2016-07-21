@@ -38,6 +38,8 @@ PODS:
   - RealmSwift (1.0.0):
     - Realm (= 1.0.0)
   - Result (2.0.0)
+  - RxBlocking (2.5.0):
+    - RxSwift (~> 2.5)
   - RxCocoa (2.5.0):
     - RxSwift (~> 2.5)
   - RxDataSources (0.8.1):
@@ -54,6 +56,7 @@ DEPENDENCIES:
   - Moya/ReactiveCocoa
   - Moya/RxSwift
   - RealmSwift
+  - RxBlocking
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -81,12 +84,13 @@ SPEC CHECKSUMS:
   Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
   RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
   Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  RxBlocking: 595d9ab56dde6b00beaa5aba40e95b150d2135f1
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
   RxDataSources: 4a87345847d66ef84ecc10bdfa189190f3cd6b12
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 51008d29af92647a3ddd2521e042c5d074a90b33
+PODFILE CHECKSUM: fb42b3d53cd6457e1ac73de4fdb93ac4a8dfa579
 
 COCOAPODS: 1.0.0.rc.2

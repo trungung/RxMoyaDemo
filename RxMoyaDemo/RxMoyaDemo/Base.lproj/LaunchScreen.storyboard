@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,20 +21,37 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RxSwift Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMA-81-t0c">
-                                <rect key="frame" x="73" y="266" width="175" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <rect key="frame" x="117" y="532" width="86" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cloud_1" translatesAutoresizingMaskIntoConstraints="NO" id="daS-zw-q9H">
+                                <rect key="frame" x="35" y="54" width="250" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="dbD-Eb-EZk"/>
+                                    <constraint firstAttribute="width" constant="250" id="hEV-DK-K8G"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyO-zc-R6e">
+                                <rect key="frame" x="96" y="266" width="128" height="37"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.79607843140000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aMA-81-t0c" secondAttribute="bottom" constant="20" id="1Zq-SH-iZE"/>
                             <constraint firstItem="aMA-81-t0c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="29C-OI-tsb"/>
+                            <constraint firstItem="daS-zw-q9H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9dA-Cg-fPL"/>
                             <constraint firstAttribute="trailing" secondItem="9mO-3p-teR" secondAttribute="trailing" id="9rC-Xh-FAs"/>
                             <constraint firstItem="9mO-3p-teR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Bg3-gD-Len"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9mO-3p-teR" secondAttribute="bottom" id="CSy-xM-P7R"/>
                             <constraint firstItem="9mO-3p-teR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Lci-l4-Wcx"/>
-                            <constraint firstItem="aMA-81-t0c" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="d61-cl-jzT"/>
+                            <constraint firstItem="zyO-zc-R6e" firstAttribute="top" secondItem="daS-zw-q9H" secondAttribute="bottom" constant="20" id="dYe-dt-dyB"/>
+                            <constraint firstItem="zyO-zc-R6e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="np4-lh-gjF"/>
+                            <constraint firstItem="zyO-zc-R6e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ppn-aZ-8uS"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,5 +62,6 @@
     </scenes>
     <resources>
         <image name="bg" width="320" height="568"/>
+        <image name="cloud_1" width="444" height="332"/>
     </resources>
 </document>

@@ -7,6 +7,11 @@
 
 import UIKit
 
+/// AppDelegate instance
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
+var rootViewController: UIViewController!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   

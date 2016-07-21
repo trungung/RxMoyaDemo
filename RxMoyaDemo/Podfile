@@ -12,6 +12,7 @@ target 'RxMoyaDemo' do
   
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxBlocking'
   pod 'RxDataSources'
   
   pod 'SwiftyJSON'

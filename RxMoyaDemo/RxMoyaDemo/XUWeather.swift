@@ -16,7 +16,7 @@ class XUWeather: Object {
   dynamic var last_updated = ""
   dynamic var is_day = false
   
-  dynamic var condition: XUCondition?
+  dynamic var condition: XUCondition!
   
   dynamic var temp_c = 0.0
   dynamic var temp_f = 0.0
